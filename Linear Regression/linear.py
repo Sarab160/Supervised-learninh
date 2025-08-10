@@ -51,6 +51,8 @@ print(rd.best_score_)
 
 print("Mean squred error: ")
 print(mean_squared_error(y_test,lr.predict(x_test)))
+
+
 def user_input(gender,race,parental,lunch,preparation,reading,writing):
     input_feature=pd.DataFrame([[gender,race,parental,lunch,preparation]],columns=feature.columns)
     encode_array=ohe.transform(input_feature)
