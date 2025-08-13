@@ -19,7 +19,7 @@ ss=StandardScaler()
 x_ss=ss.fit_transform(x_pe)
 
 x_train,x_test,y_train,y_test=train_test_split(x_ss,y,test_size=0.2,random_state=42)
-knr=KNeighborsRegressor(n_neighbors=10)
+knr=KNeighborsRegressor(n_neighbors=10,p=2)
 knr.fit(x_train,y_train)
 print(knr.score(x_test,y_test))
 
