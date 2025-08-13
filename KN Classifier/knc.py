@@ -7,11 +7,11 @@ from sklearn.metrics import confusion_matrix,precision_score,recall_score,f1_sco
 from sklearn.preprocessing import LabelEncoder
 df=pd.read_csv(r"E:\python\supervised learning\KN Classifier\Iris.csv")
 
-# sns.pairplot(data=df,hue="Species")
-# plt.show()
-######for outlier
-# sns.boxplot(data=df)
-# plt.show()
+sns.pairplot(data=df,hue="Species")
+plt.show()
+#####for outlier
+sns.boxplot(data=df)
+plt.show()
 x=df[["SepalLengthCm","SepalWidthCm","PetalLengthCm","PetalWidthCm"]]
 y=df["Species"]
 le=LabelEncoder()
