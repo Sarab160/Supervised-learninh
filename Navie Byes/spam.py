@@ -4,7 +4,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.preprocessing import LabelEncoder
 
 
-df=pd.read_csv(r"E:\python\supervised learning\Navie Byes\Iris.csv")
+df=pd.read_csv("Iris.csv")
 
 print(df.head())
 

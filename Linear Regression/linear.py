@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split,GridSearchCV,KFold,cross_va
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.metrics import mean_squared_error
 
-df=pd.read_csv(r"E:\python\supervised learning\Linear Regression\exams.csv")
+df=pd.read_csv(r"E:\python\supervised learning\Linear Regression\file/exams.csv")
 print(df.info())
 
 # plt.scatter(df["math score"],df["reading score"])

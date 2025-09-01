@@ -5,7 +5,7 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.model_selection import train_test_split,GridSearchCV,RandomizedSearchCV,KFold,cross_val_score
 from sklearn.preprocessing  import StandardScaler,PolynomialFeatures
 from sklearn.metrics import mean_squared_error, mean_absolute_error
-df=pd.read_csv(r"E:\python\supervised learning\Kn Regression\USA_Housing.csv")
+df=pd.read_csv(r"e:\python\supervised learning\Kn Regression\uSA_housin.csv")
 # print(df.head())
 
 # sns.boxplot(data=df)

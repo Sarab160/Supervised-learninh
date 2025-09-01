@@ -5,7 +5,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split,GridSearchCV
 from sklearn.metrics import confusion_matrix,precision_score,recall_score,f1_score
 from sklearn.preprocessing import LabelEncoder
-df=pd.read_csv(r"E:\python\supervised learning\KN Classifier\Iris.csv")
+df=pd.read_csv(r"e:\python\supervised learning\KN Classifier\Iris.csv")
 
 sns.pairplot(data=df,hue="Species")
 plt.show()
@@ -28,6 +28,7 @@ print(knc.score(x_train,y_train))
 clf=confusion_matrix(y_test,knc.predict(x_test))
 sns.heatmap(data=clf,annot=True)
 plt.show()
+
 print("Prescion score: ",precision_score(y_test,knc.predict(x_test),average="macro"))
 print("Recall score: ",recall_score(y_test,knc.predict(x_test),average="macro"))
 print("F1 score: ",f1_score(y_test,knc.predict(x_test),average="macro"))
