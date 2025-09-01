@@ -14,9 +14,12 @@ sns.boxplot(data=df)
 plt.show()
 x=df[["SepalLengthCm","SepalWidthCm","PetalLengthCm","PetalWidthCm"]]
 y=df["Species"]
+
 le=LabelEncoder()
+
 y=le.fit_transform(y)
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=42)
+
 
 knc=KNeighborsClassifier(n_neighbors=10)
 
@@ -26,6 +29,7 @@ print("Accuracy : ",knc.score(x_test,y_test)*100)
 print(knc.score(x_train,y_train))
 
 clf=confusion_matrix(y_test,knc.predict(x_test))
+
 sns.heatmap(data=clf,annot=True)
 plt.show()
 
