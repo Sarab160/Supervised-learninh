@@ -8,8 +8,8 @@ from sklearn.metrics import mean_squared_error
 df=pd.read_csv(r"E:\python\supervised learning\Linear Regression\file/exams.csv")
 print(df.info())
 
-# plt.scatter(df["math score"],df["reading score"])
-# plt.show()
+plt.scatter(df["math score"],df["reading score"])
+plt.show()
 
 x=df[["reading score","writing score"]]
 y=df["math score"]
