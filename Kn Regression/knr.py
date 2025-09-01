@@ -6,10 +6,10 @@ from sklearn.model_selection import train_test_split,GridSearchCV,RandomizedSear
 from sklearn.preprocessing  import StandardScaler,PolynomialFeatures
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 df=pd.read_csv(r"e:\python\supervised learning\Kn Regression\uSA_housin.csv")
-# print(df.head())
+print(df.head())
 
-# sns.boxplot(data=df)
-# plt.show()
+sns.boxplot(data=df)
+plt.show()
 
 x=df[["Avg. Area Income","Avg. Area House Age","Avg. Area Number of Rooms","Avg. Area Number of Bedrooms","Area Population"]]
 y=df["Price"]
